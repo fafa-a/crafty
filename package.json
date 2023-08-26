@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --noEmit ./index.ts && esbuild index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js"
+    "build": "tsc --noEmit ./index.ts && esbuild index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js",
+    "test": "vitest"
   },
   "bin": {
     "crafty": "dist/index.js"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@types/node": "^18.13.0",
     "esbuild": "^0.17.8",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.34.3"
   }
 }
